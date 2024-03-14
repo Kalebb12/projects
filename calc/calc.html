@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <h1>Html/Css/Js Calculator</h1>
+    <h2>What would you like to calculate today ?</h2>
+    <table>
+        <tr>
+            <td colspan="4" class="screen">
+                <input type="text" class="input" disabled>
+            </td>
+        </tr>
+        <tr>
+            <th class="red clear">clr</th>
+            <th class="symbol percentage">%</th>
+            <th class="del" colspan="2">del</th>
+        </tr>
+        <tr>
+            <td class="num allBtn">7</td>
+            <td class="num allBtn">8</td>
+            <td class="num allBtn">9</td>
+            <td class="symbol sign allBtn">*</td>
+
+        </tr>
+
+        <tr>
+            <td class="num allBtn">4</td>
+            <td class="num allBtn">5</td>
+            <td class="num allBtn">6</td>
+            <td class="symbol sign allBtn">-</td>
+        </tr>
+        <tr>
+            <td class="num allBtn">1</td>
+            <td class="num allBtn">2</td>
+            <td class="num allBtn">3</td>
+            <td class="symbol sign allBtn">+</td>
+        </tr>
+        <tr>
+
+            <td class="sign allBtn">/</td>
+            <td class="num allBtn">0</td>
+            <td class="sign allBtn">.</td>
+            <td class="equal">=</td>
+        </tr>
+
+    </table>
+    <div class="history">
+        <h2 style="text-align: center;"><u>History</u></h2>
+        <ul>
+
+        </ul>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
