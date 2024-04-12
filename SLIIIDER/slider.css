@@ -1,0 +1,89 @@
+/* Write CSS code here */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    min-height: 100vh;
+    background: linear-gradient(to left top, rgb(255, 192, 211), rgb(255, 20, 98));
+}
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrapper i {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px black;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 0.1s linear;
+}
+#left{
+    left: -22px;
+}
+#right{
+    right: -22px;
+}
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns:calc((100%/3) - 12px);
+    overflow-x: auto;
+    gap: 16px;
+    border-radius: 1px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.carousel .card , .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 300px;
+    list-style-type: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.img{
+    background-color: chartreuse;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.img >img{
+    width: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid tomato
+}
+.card >h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin:30px 0 5px 0 ;
+}
+span{
+    color: red;
+    font-size:1rem ;
+}
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
